@@ -1,0 +1,74 @@
+<?php
+
+$msg=0;
+@$msg= $_POST['msg'];
+
+?>
+
+<!DOCTYPE HTML> 
+
+<html lang="pt-br"> 
+  <head>
+    <meta charset="UTF-8"/>
+    <title> Fale conosco </title>
+	<link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+	<link rel="stylesheet" type="text/css" href="_css/contato.css"/>
+	<script language="javascript" src="_javascript/funcoes.js"> </script>
+</head>
+
+  <body>
+     <div id="interface">
+	     <header id="cabecalho">
+		     <hgroup>
+			     <h1> Gustavo de Lima </h1>
+				 <h2> Front-end developer </h2>
+			 </hgroup>
+	         <nav id="menu">
+			     <h1> Menu Principal</h1>
+				 <ul>
+				 <li><a href="index.html">Home</a></li>
+				 <li><a href="sobre.html">Sobre</a></li>
+				 <li><a href="portfolio.html">Portfolio</a></li>
+				 <li><a href="servicos.html">Serviços</a></li>
+				 <li><a href="contato.html">Contato</a></li>
+				 </ul>
+	         </nav>
+	     </header>
+		 
+     <section id="corpo">
+	 <hgroup id="sub">
+		    <h2>Formulário de contato</h2>
+		 </hgroup>
+		 <div id="formu">
+		 <?php if($msg==enviado):
+	    echo= $enviado;
+	    else: ?>
+	     <form method="post" action="processaForm.php">
+		     <fieldset id="usuario"><legend>Entre em contato</legend>
+			 <p><label for="nome">Nome:</label> <input type="text" name="nome" id="nome" size="20" maxlength="30" placeholder="Nome Completo" required /></p>
+			 <p><label for="mail">Email:</label> <input type="email" name="mail" id="mail" size="20" maxlength="40" placeholder="example@example.com" required /></p>
+			 <p><label for="tel">Telefone:</label> <input type="text" name="tel" id="tel" size="14" maxlength="14" placeholder="9999-9999" required /></p>
+			 <p><label for="ass">Assunto:<label> <select name="ass" id="ass" required>
+			     <option value="orçamento">Orçamento</option>
+				 <option value="duvida">Duvida</option>
+				 <option value="reclamação">Reclamação</option>
+				 <option value="Outros">Outros</option>
+			</select></p>
+			<p><label for="msg">Mensagem:</label>
+			<textarea name="msg" id="msg" cols="45" rows="5" placeholder="Digite aqui sua Mensagem" required ></textarea></p>
+			<button type="submit" id="benviar" value="enviar">Enviar</button>
+			</fieldset>
+		 </form>
+		 <?php endif; ?>
+		 </div>
+	  </section>
+		 
+		 <footer id="rodape">
+		    <p> Copyright 2018 - Gustavo Serejo de Lima - Todos os direitos Reservados <br/>
+			<a href="https://www.facebook.com/Tavoks" target="_blank"><img src="imagens/face.png"id="imgrodape"/></a> 
+			<a href="https://twitter.com/tavokes" target="_blank"><img src="imagens/twitter.png" id="imgrodape"/></a>
+			<a href="https://www.linkedin.com/in/gustavo-lima-16621a137/" target="_blank"><img src="imagens/linkedin.png" id="imgrodape"/></a></p>
+		 </footer>
+		 </div>
+  </body>
+</html>
