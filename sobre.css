@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+/* corpo */
+
+ hgroup#sub h2 {
+	  font-family: Arial, sans-serif;
+	  color: rgba (0,128,255,0.8);
+	  font-size: 15pt;
+	  padding: 10px;
+	  margin-top: 0px;
+	  border-bottom: 1px solid rgba(0,0,0,.2);
+} 
+
+div#sobrem {
+	border: 1px solid rgba(0,0,0,0.8);
+}
+
+/* lado esquerdo */
+
+section#corpo {
+	display:block;
+	width: 400px;
+	float: right; 
+	padding-left: 20px;
+	margin-right: 50px;
+	border: 1px solid rgba (0,0,0,.8);
+}
+
+/* menu de controle do iframe */
+
+ul#menusobre {
+	border: 1px solid #E6E6E6 rgba(0,0,0,0.8);
+	border-spacing: 0px;
+	list-style: none;
+}
+
+li#menusobre {
+	border: 1px solid #606060;
+	padding: 10px;
+	padding-right: 20px;
+	padding-left: 20px;
+	background-color: rgba(169,169,169,.2);
+	transition: background-color 1s;
+}
+
+li#menusobre:hover {
+	  background-color: rgba(0,128,255,0.8);
+	  color: #ffffff;
+  }
+  
+  /* lado direito */
+  
+aside#lateral {
+	display:block;
+	width:350;
+	float: left;
+}
+  
+ iframe#framespec {
+	 width: 350px;
+	 height: 280px;
+	 border: none;
+	 overflow: hidden;
+ }

@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+/* corpo */
+
+hgroup#sub h2 {
+	  font-family: Arial, sans-serif;
+	  color: rgba(0,128,255,0.8);
+	  font-size: 15pt;
+	  padding: 10px;
+	  margin-top: 0px;
+	  border-bottom: 1px solid rgba(0,0,0,.2);
+} 
+
+div#formu {
+	border: 1px solid rgba(0,0,0,.5);
+}
+
+/* formulário */
+
+form {
+	width: 500px;
+	margin: auto;
+}
+
+input, textarea {
+	font-family: Arial, sans-serif;
+	font-weight: normal;
+	font-size: 13pt;
+	background-color: rgba(255,255,255,.8);
+}
+
+select {
+	font-family: Arial, sans-serif;
+	font-weight: normal;
+	font-size: 13pt;
+	background-color: rgba(255,255,255,.8);
+	position: relative;
+	
+}
+
+select:hover {
+	background-color: #dddddd;
+}
+
+input:hover, textarea:hover {
+	background-color: #dddddd;
+}
+
+legend {
+	color: #888888;
+	font-weight: bold;
+	font-size: 13pt;
+	font-family: sans-serif;
+}
+
+fieldset {
+	border-color: #cecece;
+	margin: 20px;
+}
+
+button#benviar {
+	
+	font-size: 14px;
+	color: #606060;
+	padding: 10px 50px;
+	position: relative;
+	left: 150px;
+	background: -moz-linear-gradient(
+		top,
+		#ffffff 0%,
+		#ffffff 50%,
+		#d6d6d6);
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: 3px solid rgba(0,0,0,.5);
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 3px rgba(255,255,255,1);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 3px rgba(255,255,255,1);
+	box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 3px rgba(255,255,255,1);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.1),
+		0px 1px 0px rgba(255,255,255,1);		
+
+}
+
+button#benviar:hover {
+	-webkit-transition: all .3s ease-in;
+	-webkit-transform: scale(1.3);
+}

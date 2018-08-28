@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+h1#ptitulo {
+	position: relative;
+	left: 300px;
+	font-family: Arial, sans-serif;
+	font-size: 20pt;
+	color: #606060;
+}
+
+img#foto {
+	width: 800px;
+	background-color: white;
+	margin: 10px auto 10px auto;
+	padding: 10px;
+}
